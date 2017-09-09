@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="asus.h" />
+    <ClInclude Include="Cheat.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="DLLMain.h" />
+    <ClInclude Include="Enhancements.h" />
+    <ClInclude Include="Features\AntiAim.h" />
+    <ClInclude Include="Features\Autowall.h" />
+    <ClInclude Include="Features\ClantagChanger.h" />
+    <ClInclude Include="Features\LegitBot.h" />
+    <ClInclude Include="Features\Miscellaneous.h" />
+    <ClInclude Include="Features\NameChanger.h" />
+    <ClInclude Include="Features\PredictionSystem.h" />
+    <ClInclude Include="Features\RageBot.h" />
+    <ClInclude Include="Features\Visuals.h" />
+    <ClInclude Include="Features\FakeLag.h" />
+    <ClInclude Include="GameEvent.h" />
+    <ClInclude Include="Hooks.h" />
+    <ClInclude Include="Hooks\Menu.h" />
+    <ClInclude Include="ImGUI\dx9\imgui_dx9.h" />
+    <ClInclude Include="ImGUI\imconfig.h" />
+    <ClInclude Include="ImGUI\imgui.h" />
+    <ClInclude Include="ImGUI\imgui_internal.h" />
+    <ClInclude Include="ImGUI\stb_rect_pack.h" />
+    <ClInclude Include="ImGUI\stb_textedit.h" />
+    <ClInclude Include="ImGUI\stb_truetype.h" />
+    <ClInclude Include="Parser.h" />
+    <ClInclude Include="rbot.h" />
+    <ClInclude Include="SDK.h" />
+    <ClInclude Include="sdkevents.h" />
+    <ClInclude Include="SDK\checksum_md5.h" />
+    <ClInclude Include="SDK\ConVar.h" />
+    <ClInclude Include="SDK\Draw.h" />
+    <ClInclude Include="SDK\Entity.h" />
+    <ClInclude Include="SDK\GlowManager.h" />
+    <ClInclude Include="SDK\Input.h" />
+    <ClInclude Include="SDK\Interfaces.h" />
+    <ClInclude Include="SDK\Interfaces\IBaseClientDLL.h" />
+    <ClInclude Include="SDK\Interfaces\IClientEntityList.h" />
+    <ClInclude Include="SDK\Interfaces\IClientModeShared.h" />
+    <ClInclude Include="SDK\Interfaces\ICvar.h" />
+    <ClInclude Include="SDK\Interfaces\IEngineClient.h" />
+    <ClInclude Include="SDK\Interfaces\IEngineTrace.h" />
+    <ClInclude Include="SDK\Interfaces\IGameMovement.h" />
+    <ClInclude Include="SDK\Interfaces\IGlobalVarsBase.h" />
+    <ClInclude Include="SDK\Interfaces\IInputSystem.h" />
+    <ClInclude Include="SDK\Interfaces\IMaterial.h" />
+    <ClInclude Include="SDK\Interfaces\IMaterialSystem.h" />
+    <ClInclude Include="SDK\Interfaces\IPrediction.h" />
+    <ClInclude Include="SDK\Interfaces\IRenderView.h" />
+    <ClInclude Include="SDK\Interfaces\IStudioRender.h" />
+    <ClInclude Include="SDK\Interfaces\ISurface.h" />
+    <ClInclude Include="SDK\Interfaces\IVDebugOverlay.h" />
+    <ClInclude Include="SDK\Interfaces\IVModelInfo.h" />
+    <ClInclude Include="SDK\Interfaces\IVModelRender.h" />
+    <ClInclude Include="SDK\Interfaces\IVPanel.h" />
+    <ClInclude Include="SDK\Math.h" />
+    <ClInclude Include="SDK\Misc.h" />
+    <ClInclude Include="SDK\NetVarManager.h" />
+    <ClInclude Include="SDK\Trace.h" />
+    <ClInclude Include="SDK\VPhysics.h" />
+    <ClInclude Include="SESDK.h" />
+    <ClInclude Include="Settings\Config.h" />
+    <ClInclude Include="Settings\cx_fnv1.h" />
+    <ClInclude Include="Settings\cx_pcg32.h" />
+    <ClInclude Include="Settings\cx_strenc.h" />
+    <ClInclude Include="Settings\Global.h" />
+    <ClInclude Include="Settings\Offsets.h" />
+    <ClInclude Include="Settings\Util.h" />
+    <ClInclude Include="Settings\Vars.h" />
+    <ClInclude Include="SkinChanger.h" />
+    <ClInclude Include="thirdperson.h" />
+    <ClInclude Include="Vdf.h" />
+    <ClInclude Include="VTHook.h" />
+    <ClInclude Include="xor.h" />
+    <ClInclude Include="XorStr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="applyknife.cpp" />
+    <ClCompile Include="Asus.cpp" />
+    <ClCompile Include="DLLMain.cpp" />
+    <ClCompile Include="Features\AntiAim.cpp" />
+    <ClCompile Include="Features\Autowall.cpp" />
+    <ClCompile Include="Features\ClantagChanger.cpp" />
+    <ClCompile Include="Features\LegitBot.cpp" />
+    <ClCompile Include="Features\Miscellaneous.cpp" />
+    <ClCompile Include="Features\NameChanger.cpp" />
+    <ClCompile Include="Features\PredictionSystem.cpp" />
+    <ClCompile Include="Features\RageBot.cpp" />
+    <ClCompile Include="Features\Visuals.cpp" />
+    <ClCompile Include="Features\FakeLag.cpp" />
+    <ClCompile Include="Hooks\CreateMove.cpp" />
+    <ClCompile Include="Hooks\DrawModelExecute.cpp" />
+    <ClCompile Include="Hooks\EndScene.cpp" />
+    <ClCompile Include="Hooks\FrameStageNotify.cpp" />
+    <ClCompile Include="Hooks\OverrideView.cpp" />
+    <ClCompile Include="Hooks\PaintTraverse.cpp" />
+    <ClCompile Include="Hooks\PlaySound.cpp" />
+    <ClCompile Include="Hooks\WndProc.cpp" />
+    <ClCompile Include="ImGUI\dx9\imgui_dx9.cpp" />
+    <ClCompile Include="ImGUI\imgui.cpp" />
+    <ClCompile Include="ImGUI\imgui_draw.cpp" />
+    <ClCompile Include="LagCompensation.cpp" />
+    <ClCompile Include="RecvProp.cpp" />
+    <ClCompile Include="report.cpp" />
+    <ClCompile Include="SDK\ConVar.cpp" />
+    <ClCompile Include="SDK\Draw.cpp" />
+    <ClCompile Include="SDK\Entity.cpp" />
+    <ClCompile Include="SDK\Input.cpp" />
+    <ClCompile Include="SDK\Interfaces.cpp" />
+    <ClCompile Include="SDK\Interfaces\IBaseClientDLL.cpp" />
+    <ClCompile Include="SDK\Interfaces\IInputSystem.cpp" />
+    <ClCompile Include="SDK\Interfaces\IMaterialSystem.cpp" />
+    <ClCompile Include="SDK\Interfaces\IPhysicsSurfaceProps.cpp" />
+    <ClCompile Include="SDK\Interfaces\ISurface.cpp" />
+    <ClCompile Include="SDK\Interfaces\IVModelRender.cpp" />
+    <ClCompile Include="SDK\Interfaces\IVPanel.cpp" />
+    <ClCompile Include="SDK\Math.cpp" />
+    <ClCompile Include="SDK\NetVarManager.cpp" />
+    <ClCompile Include="Settings\Config.cpp" />
+    <ClCompile Include="Settings\Global.cpp" />
+    <ClCompile Include="Settings\Offsets.cpp" />
+    <ClCompile Include="Settings\Util.cpp" />
+    <ClCompile Include="SkinChanger.cpp" />
+    <ClCompile Include="SkinParsing.cpp" />
+    <ClCompile Include="thirdperson.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{45A301E6-73EC-4F60-88F4-D1D5154B58D7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>csgo_internal</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>MorphRecode</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\boost_1_64_0;D:\dxx\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\boost_1_64_0;D:\dxx\Lib\x86;$(LibraryPath)</LibraryPath>
+    <TargetName>map</TargetName>
+    <ExecutablePath>D:\boost_1_64_0;D:\dxx\Include;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;C:\Users\illya\Desktop\boost_1_64_0;D:\smarthack\organner recode\CSGO-SDK;C:\Users\Игорь\Desktop\boost_1_65_0;D:\boost_1_64_0;C:\Users\Ф\Desktop\EzVac v2\D_iRektKit\iRektKit\C;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;C:\Users\illya\Desktop\boost_1_64_0;D:\smarthack\organner recode\CSGO-SDK;C:\Users\Игорь\Desktop\boost_1_65_0;D:\boost_1_64_0;C:\Users\Ф\Desktop\EzVac v2\D_iRektKit\iRektKit\C;D:\dxx\Lib\x86;$(LibraryPath)</LibraryPath>
+    <TargetName>map</TargetName>
+    <ExecutablePath>D:\smarthack\organner recode\CSGO-SDK;C:\Users\Игорь\Desktop\boost_1_65_0\libs;D:\boost_1_64_0;C:\Users\Ф\Desktop\EzVac v2\D_iRektKit\iRektKit\C;C:\Users\illya\Desktop\boost_1_64_0;D:\dxx\Include;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;GAMINGENHANCEMENT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>/ignore:4307 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level1</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;GAMINGENHANCEMENT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <FullProgramDatabaseFile>false</FullProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <AdditionalDependencies>VMProtectSDK32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
